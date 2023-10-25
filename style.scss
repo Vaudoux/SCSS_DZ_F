@@ -1,0 +1,125 @@
+//Импорт стилей
+@import "mixins";
+@import "siteproperties";
+@import "variables";
+@import "index";
+@import "product";
+@import "catalog";
+@import "cart";
+@import "registration";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+-------------------------mobile-----------------------
+--------------------------------------------------- */
+
+/* @media (max-width: 370px) {
+.header{
+    flex-wrap: nowrap;
+}
+.header__right{
+    flex-direction: row-reverse;
+    margin-right: 16px;
+}
+.header__left {
+    margin-left: 16px;
+}
+.header__secondImage {
+    visibility: hidden;
+      /* flex-wrap: wrap; */
+
+
+/*------------------------------------------*/
+/* .thebrand{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.thebrand__image {
+    display: none;
+    width: 50%;
+}
+.thebrand__title{
+    padding-left: 0;  
+    height: 363px;
+}
+.thebrand__subtitle{
+    font-size: 38px;
+}
+.thebrand__subtext{
+    font-size: 20px;
+}
+.thebrand__rectangle {
+    margin-left: 0;
+} */
+/*-----------------------------*/
+/* .accesories {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 16px;
+}
+}
+.featured__grid{
+    gap: 16px;
+    margin: 0 8px;
+}
+.accesories__bigitem {
+    position: relative;
+    min-height: 180px;
+    grid-column: 1 / -1;
+    padding: 0 8px;
+} */
+/*------------footer-----------*/
+/* .featurefo{
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 35px;
+}
+.frame__text {
+    color: $fontMineColor;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.frame__item {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 126px;
+    padding-top: 97px;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 55px;
+}
+.frame__sutitle {
+    color: $fontMineColor;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 153.2%;
+    margin-bottom: 22px;
+}
+.frame__inputbox {
+    display: flex;
+    width: 245px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 40px 0 0 40px;
+}
+.copyright {
+    background-color: $footerColor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-bottom: 9px;
+} */
+
+

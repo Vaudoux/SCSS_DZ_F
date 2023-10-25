@@ -1,0 +1,44 @@
+@import "variables";
+
+/* :root {
+    --padding-center: calc(50% - 570px);
+    --padding-thebrand: calc(50% - 800px);
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.site {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  // Отключил так как не видны менюшки в продукте
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.center {
+  /* padding-left: calc(50% - $widthSite/2);
+    padding-right: calc(50% - $widthSite/2); */
+  padding-left: calc(50vw - 570px);
+  padding-right: calc(50vw - 570px);
+}
+
+summary {
+  display: block;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* @media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50vw - 350px);
+    padding-right: calc(50vw - 350px);
+  }
+} */

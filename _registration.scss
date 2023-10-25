@@ -1,0 +1,192 @@
+@import "variables";
+
+.registration {
+    &__container {
+        display: flex;
+        margin-top: 64px;
+        margin-bottom: 96px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title {
+        color: $fontMineColor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &__input {
+        width: 360px;
+        height: 45px;
+        flex-shrink: 0;
+        background-color: #fff;
+        border: 1px solid $lightenedColor;
+        padding-left: 17px;
+        color: #b1b1b1;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &__gender {
+        display: flex;
+        gap: 10px;
+        margin-top: 31px;
+        margin-bottom: 33px;
+    }
+    &__radio {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    &__radio-other {
+        display: none;
+    }
+    &__radio:checked + label::before {
+        border-color: $fontColor;
+        background-color: #fff;
+        border: 4px solid $fontColor;
+    }
+    &__radio + label::before {
+        content: "";
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        border: 1px solid $lightenedColor;
+        border-radius: 50%;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+    &__note {
+        color: #b1b1b1;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &__button {
+        width: 167px;
+        height: 50px;
+        flex-shrink: 0;
+        background-color: $fontColor;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: 1px solid $fontColor;
+    }
+    &__button-image {
+        margin-right: 20px;
+    }
+    &__button:hover {
+        background-color: #fff;
+        color: $fontColor;
+    }
+    &__info {
+        margin-left: 128px;
+    }
+    &__info-title {
+        color: $fontMineColor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 22px;
+    }
+    &__info-text {
+        color: $fontMineColor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 21px;
+    }
+    &__info-list {
+        padding-bottom: 16px;
+        color: $fontMineColor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
+
+ul {
+    display: inline;
+}
+
+input[type="radio"] {
+    accent-color: $fontColor;
+}
+
+.top-head__container {
+    max-width: $widthSite;
+}
+/* ---------------------------------------------------
+-------------------------tablet-----------------------
+--------------------------------------------------- */
+@media (max-width: 769px) {
+    .center {
+        padding-left: calc(50vw - 370px);
+        padding-right: calc(50vw - 370px);
+    }
+}
+/* ---------------------------------------------------
+-------------------------mobile-----------------------
+--------------------------------------------------- */
+
+@media (max-width: 426px) {
+    .center {
+        padding-left: calc(50vw - 180px);
+        padding-right: calc(50vw - 180px);
+    }
+    .header__secondimage {
+        display: none;
+    }
+    .header__left {
+        margin-left: 0;
+    }
+    .header__right {
+        margin-right: 0;
+    }
+    .top-head__container {
+        display: flex;
+        justify-content: center;
+    }
+    .registration__radio-other {
+        display: flex;
+    }
+    .registration__container {
+        flex-direction: column;
+    }
+    .registration__info {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .frame {
+        padding-bottom: 110px;
+    }
+    .frame__item {
+        padding-top: 38px;
+        padding-bottom: 0;
+    }
+    .frame__image {
+        margin-bottom: 30px;
+    }
+    .copyright {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .copyright__items {
+        padding-right: 0;
+        padding-top: 43px;
+    }
+    .copyright__title {
+        padding-left: 0;
+        margin-bottom: 24px;
+    }
+}
